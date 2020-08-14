@@ -15,8 +15,11 @@
         let graphAPIScopes = ["https://graph.microsoft.com/user.read", "https://graph.microsoft.com/user.readwrite"];
 
         let userAgentApplication = new Msal.UserAgentApplication(
-            "05f53bd9-6af4-4bbb-9444-7eb978a3640f",
-            "https://login.microsoftonline.com/Payb.onmicrosoft.com",
+            "05f53bd9-6af4-4bbb-9444-7eb978a3640f", 
+            "https://login.microsoftonline.com/funpodiumnet.onmicrosoft.com",  
+            //Application (client)     ID:05f53bd9-6af4-4bbb-9444-7eb978a3640f
+            // multiple tenant app,   https://login.microsoftonline.com/Payb.onmicrosoft.com
+            // original,                   https://login.microsoftonline.com/common
             this.tokenReceivedCallback);
 
         if (userAgentApplication.isCallback(window.location.hash)) {

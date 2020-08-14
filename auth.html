@@ -16,7 +16,7 @@
 
         let userAgentApplication = new Msal.UserAgentApplication(
             "440d38c1-675b-455d-8278-11736dbdc9cc",
-            "https://login.microsoftonline.com/2623590e-e357-4e48-9ac4-b6ddb974b754/saml2",
+            "https://login.microsoftonline.com/common",
             this.tokenReceivedCallback);
 
         if (userAgentApplication.isCallback(window.location.hash)) {
